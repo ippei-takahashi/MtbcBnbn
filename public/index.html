@@ -8,13 +8,233 @@
   <link rel="stylesheet" href="css/flat-ui.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="favicon.ico" />
-
   <script type="text/javascript" src="js/jst/template.js"></script>
   <script type="text/javascript" src="/socket.io/socket.io.js"></script>
-
   <script type="text/javascript" src="js/libs/require.min.js"></script>
   <script type="text/javascript" src="js/require.config.js"></script>
 </head>
 <body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  <div class="header-container">
+    <header class="top-header" id="top" role="banner">
+      <div class="top-menu-container">
+        <div class="container">
+          <div class="shigeru">
+          <nav class="top-menu-navigation clearfix" role="navigation">
+            <ul id="menu-topmenu-1" class="">
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5"><a href="http://careerconnection.jp/">モバイル</a></li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><a href="https://id.careerconnection.jp/login/?siteFlg=3&amp;hrefTo=aHR0cHM6Ly9uZXdzLmNhcmVlcmNvbm5lY3Rpb24uanAv">サインイン/サインアップ</a></li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a href="https://id.careerconnection.jp/registform/registform_id.html?siteFlg=3&amp;editType=31">日本</a></li>
+            </ul>
+          </nav>
+          </div>   <!--しげるのおわり -->  
+          </div>                              
+          <!-- End top-menu-navigation -->
+        </div> 
+      </div>
+
+      <div class="container">
+        <div class="shigeru">
+        <img src="img/franck_logo.png" height="58" width="332" alt="キャリコネニュース | 企業の口コミが記事に！">
+        
+        <div class="main-menu-container">
+         <nav class="navbar navbar-inverse navbar-embossed" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+                <span class="sr-only">Toggle navigation</span>
+              </button>
+              <a class="navbar-brand" href="#" style="css">Top</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-01">
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="#fakelink">掲示板</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Messages <b class="caret"></b></a>
+                  <span class="dropdown-arrow"></span>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </li>
+                <li><a href="#fakelink">About Us</a></li>
+               </ul>
+               <div class="navbar-form navbar-right" action="#">
+              </div>
+            </div><!-- /.navbar-collapse -->
+          </nav>
+        </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div id="main-container-wrapper" class="main">
+    <div class="container" id="main-container">
+      <div class="row">
+      
+      <div id="primary" class="col-xs-3 main-sidebar">
+        <div class="alert alert-warning" id="sidebar">
+        <p>検索メニュー</p>
+        <div class="parts-list-container">
+          <ul id="partsList" class="parts-list">
+            <li><a href="#">新規投稿</a></li>
+            <li><a href="#">絞込検索</a></li>
+            <li><a href="#">場所</a></li>
+            <li><a href="#">間取り</a></li>
+         <select class="form-control select select-primary select2-offscreen" data-toggle="select" tabindex="-1" title="">
+            <option value="0">間取り0</option>
+            <option value="1">間取り1</option>
+            <option value="2">間取り2</option>
+            <option value="3">間取り3</option>
+            <option value="4" selected="">間取り4</option>
+            <option value="5">間取り5</option>
+          </select>
+    
+            <li><a href="#">金額</a></li>
+            <select class="form-control select select-primary select2-offscreen" data-toggle="select" tabindex="-1" title="">
+            <option value="0">2000円以下</option>
+            <option value="1">2000円〜3000円</option>
+            <option value="2">3000円〜4000円</option>
+            <option value="3">4000円〜6000円</option>
+            <option value="4" selected="">6000円〜10000円</option>
+            <option value="5">10000円以上</option>
+          </select>
+          </ul>
+        </div>
+        <p>役立ちメニュー<p>
+          <div class="parts-list-container">
+            <ul id="partsList" class="parts-list">
+              <li><a href="#">旅のヒント</a></li>
+              <li><a href="#">世界各国の旅行情報</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6 main-house-container" id="main">
+        <h4>運用募集中の家</h4>
+        <ul class="rental-house-list">
+          <li class="rental-house-list-item">
+            <div class="house-time">2014年10月24日　投稿</div>
+            <div class="house-title">駅徒歩５分ー家具付きの一軒家4LDKを運用しませんか？</div>
+            <div class="house-img">
+              <img src="img/house1.png" height="120" width="180" alt="写真" align="left">
+            </div>  
+            <div class="house-description">
+              場所 :　大阪府大阪市北区<br>
+              最寄り駅:  JR天満駅徒歩5分<br>
+              間取り :4LDK<br>
+              説明:家具付きの1軒家です。駅から徒歩5分の好立地です。<br> 賃貸に元々出していましたが、運用してくれる人を...<br>
+              <a href="#">>>詳細はこちら</a>
+            </div>
+          </li>
+          <li class="rental-house-list-item">
+            <div class="house-time">2014年10月24日　投稿</div>
+            <div class="house-title">駅徒歩５分ー家具付きの一軒家4LDKを運用しませんか？</div>
+            <div class="house-img">
+              <img src="img/house1.png" height="120" width="180" alt="写真" align="left">
+            </div>  
+            <div class="house-description">
+              場所 :　大阪府大阪市北区<br>
+              最寄り駅:  JR天満駅徒歩5分<br>
+              間取り :4LDK<br>
+              説明:家具付きの1軒家です。駅から徒歩5分の好立地です。<br> 賃貸に元々出していましたが、運用してくれる人を...<br>
+              <a href="#">>>詳細はこちら</a>
+            </div>
+          </li>
+          <li class="rental-house-list-item">
+            <div class="house-time">2014年10月24日　投稿</div>
+            <div class="house-title">駅徒歩５分ー家具付きの一軒家4LDKを運用しませんか？</div>
+            <div class="house-img">
+              <img src="img/house1.png" height="120" width="180" alt="写真" align="left">
+            </div>  
+            <div class="house-description">
+              場所 :　大阪府大阪市北区<br>
+              最寄り駅:  JR天満駅徒歩5分<br>
+              間取り :4LDK<br>
+              説明:家具付きの1軒家です。駅から徒歩5分の好立地です。<br> 賃貸に元々出していましたが、運用してくれる人を...<br>
+              <a href="#">>>詳細はこちら</a>
+            </div>
+          </li>
+          <li class="rental-house-list-item">
+            <div class="house-time">2014年10月24日　投稿</div>
+            <div class="house-title">駅徒歩５分ー家具付きの一軒家4LDKを運用しませんか？</div>
+            <div class="house-img">
+              <img src="img/house1.png" height="120" width="180" alt="写真" align="left">
+            </div>  
+            <div class="house-description">
+              場所 :　大阪府大阪市北区<br>
+              最寄り駅:  JR天満駅徒歩5分<br>
+              間取り :4LDK<br>
+              説明:家具付きの1軒家です。駅から徒歩5分の好立地です。<br> 賃貸に元々出していましたが、運用してくれる人を...<br>
+              <a href="#">>>詳細はこちら</a>
+            </div>
+          </li>
+          <li class="rental-house-list-item">
+            <div class="house-time">2014年10月24日　投稿</div>
+            <div class="house-title">駅徒歩５分ー家具付きの一軒家4LDKを運用しませんか？</div>
+            <div class="house-img">
+              <img src="img/house1.png" height="120" width="180" alt="写真" align="left">
+            </div>  
+            <div class="house-description">
+              場所 :　大阪府大阪市北区<br>
+              最寄り駅:  JR天満駅徒歩5分<br>
+              間取り :4LDK<br>
+              説明:家具付きの1軒家です。駅から徒歩5分の好立地です。<br> 賃貸に元々出していましたが、運用してくれる人を...<br>
+              <a href="#">>>詳細はこちら</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="secondary" class="widget-area col-xs-3 main-sidebar" role="complementary">
+        <div class="alert alert-warning" id="sidebar">
+        <p>検索メニュー</p>
+        <div class="parts-list-container">
+          <ul id="partsList" class="parts-list">
+            <li><a href="#">新規投稿</a></li>
+            <li><a href="#">絞込検索</a></li>
+            <li><a href="#">場所</a></li>
+            <li><a href="#">間取り</a></li>
+         <select class="form-control select select-primary select2-offscreen" data-toggle="select" tabindex="-1" title="">
+            <option value="0">間取り0</option>
+            <option value="1">間取り1</option>
+            <option value="2">間取り2</option>
+            <option value="3">間取り3</option>
+            <option value="4" selected="">間取り4</option>
+            <option value="5">間取り5</option>
+          </select>
+    
+            <li><a href="#">金額</a></li>
+            <select class="form-control select select-primary select2-offscreen" data-toggle="select" tabindex="-1" title="">
+            <option value="0">2000円以下</option>
+            <option value="1">2000円〜3000円</option>
+            <option value="2">3000円〜4000円</option>
+            <option value="3">4000円〜6000円</option>
+            <option value="4" selected="">6000円〜10000円</option>
+            <option value="5">10000円以上</option>
+          </select>
+          </ul>
+        </div>
+        <p>役立ちメニュー<p>
+          <div class="parts-list-container">
+            <ul id="partsList" class="parts-list">
+              <li><a href="#">旅のヒント</a></li>
+              <li><a href="#">世界各国の旅行情報</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
 </body>
 </html>

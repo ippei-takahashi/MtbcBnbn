@@ -1,0 +1,163 @@
+
+header {
+	background-color: #ededed;
+}
+
+.shigeru{
+	background-color: #FFFFFF;
+}
+body {
+	background-color: #ededed;
+}
+
+.clear {
+  clear: both;
+  height: 60px;
+  background: #e58;
+}
+
+/* Header */
+.header-container {
+  background: #ffffff;
+}
+
+.house-description{
+	font-size: 0.7em;
+}
+
+.house-description a{
+	font-size: 1em;
+	color: blue;
+}
+
+.house-time {
+	font-size: 0.5em;
+}
+
+.house-img img{
+	margin-left: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+
+.house-title {
+	font-size: 1em;
+	color: blue;
+}
+
+
+.logo {
+	background-image: url(../img/franck_logo.png);
+	width:300px;
+}
+
+
+
+
+/* Top Nav */
+.top-menu-container .current_page_item > a {
+  font-weight: bolder;
+}
+.top-menu-container {
+  background: #f5f5f5;
+  margin-bottom: 0;
+}
+.top-menu-container .top-menu-navigation {
+  float: right;
+}
+.top-menu-container .top-menu-navigation ul {
+  z-index: 9999;
+  list-style-type: none;
+}
+.top-menu-container .top-menu-navigation ul > li {
+  float: left;
+  position: relative;
+}
+.top-menu-container .top-menu-navigation ul > li a {
+  -moz-transition: opacity 0.2s ease-in;
+  -o-transition: opacity 0.2s ease-in;
+  -webkit-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+  color: #333333;
+  display: inline-block;
+  font-size: 12px;
+  height: 32px;
+  line-height: 32px;
+  margin-right: 1em;
+  padding-right: 1em;
+  position: relative;
+  text-transform: capitalize;
+}
+.top-menu-container .top-menu-navigation ul > li a::before {
+  color: #000000;
+  content: '|';
+  font-size: 10px;
+  position: absolute;
+  right: 0;
+  top: -1px;
+}
+.top-menu-container .top-menu-navigation ul > li ul {
+  -moz-transition: opacity 0.2s ease-in;
+  -o-transition: opacity 0.2s ease-in;
+  -webkit-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+  background: #f5f5f5;
+  border: 1px solid #dcdcdc;
+  border-bottom: 0;
+  filter: alpha(opacity=0);
+  left: -1em;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+}
+.top-menu-container .top-menu-navigation ul > li ul li {
+  border-bottom: 1px solid #dcdcdc;
+  float: none;
+  position: relative;
+  white-space: nowrap;
+}
+.top-menu-container .top-menu-navigation ul > li ul li a {
+  display: block;
+  margin-right: 0;
+  padding: 0 1em;
+  white-space: nowrap;
+}
+.top-menu-container .top-menu-navigation ul > li ul li a:hover {
+  background: #ededed;
+}
+.top-menu-container .top-menu-navigation ul > li ul li a::before {
+  content: '';
+}
+.top-menu-container .top-menu-navigation ul > li ul li ul {
+  -moz-transition: opacity 0.2s ease-in;
+  -o-transition: opacity 0.2s ease-in;
+  -webkit-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+  filter: alpha(opacity=0);
+  left: 100%;
+  opacity: 0;
+  position: absolute;
+  top: -1px;
+  visibility: hidden;
+}
+.top-menu-container .top-menu-navigation ul > li:hover > ul {
+  filter: alpha(opacity=100);
+  opacity: 10;
+  visibility: visible;
+}
+
+.rental-house-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+.rental-house-list li{
+	border-top:1px solid #CCC;
+    padding: 3px;
+}
+
+.rental-house-list-item {
+	background: #ffffff;
+	height: 180px;
+}
