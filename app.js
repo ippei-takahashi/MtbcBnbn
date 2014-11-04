@@ -1,8 +1,8 @@
 var http = require("http"),
 	express = require("express"),
-	socketIO = require('socket.io'),
 	routes = require("./routes"),
-	app = express();
+	app = express(),
+	server = http.createServer(app);
 
 app.configure(function() {
 	app.use(express.bodyParser());

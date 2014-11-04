@@ -147,6 +147,12 @@ body {
   visibility: visible;
 }
 
+.parts-list {
+	list-style-type: none;
+	padding: 0;
+	margin-left: 10px;
+}
+
 .rental-house-list {
 	list-style-type: none;
 	padding: 0;
@@ -155,6 +161,8 @@ body {
 .rental-house-list li{
 	border-top:1px solid #CCC;
     padding: 3px;
+
+
 }
 
 .rental-house-list-item {
