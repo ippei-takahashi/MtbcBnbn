@@ -6,8 +6,16 @@ header {
 .shigeru{
 	background-color: #FFFFFF;
 }
+
 body {
-	background-color: #ededed;
+  background-size: 100%;
+  background-image: url(../img/bee.png);
+}
+
+.main-house-container {
+  background-color: #d9edf7;
+  color: #31708f;
+  border-radius: 4px;
 }
 
 .clear {
@@ -160,7 +168,7 @@ body {
 
 .rental-house-list li{
 	border-top:1px solid #CCC;
-    padding: 3px;
+  padding: 3px;
 
 
 }
